@@ -19,6 +19,7 @@ public class Main {
         Building school = new Building(numberOfRooms, 1, 1, true);
 
         System.out.println("Total amount of lamps in building: "+countLampsInBuilding(school));
+        System.out.println(isNormal(school));
     }
 
     private static int countLampsInBuilding(Building building) {
@@ -27,6 +28,15 @@ public class Main {
              counter += room.getNumberOfLamps();
         }
         return counter;
+    }
+    private static boolean isNormal(Building building){
+        if(building.getNumberOfFloors() > building.getNumberOfRooms().size()){
+            System.out.println("This is an odd building");
+            return true;
+        }else{
+            return false;
+        }
+
     }
 
 
