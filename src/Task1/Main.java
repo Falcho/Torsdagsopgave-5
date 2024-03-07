@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Customer> customerList = new ArrayList<>();
-        customerList.add (new Customer("Mathias", "Falcham", "Falcho"));
+        customerList.add(new Customer("Mathias", "Falcham", "Falcho"));
         customerList.add(new Customer("Frederick","Franck","MojoOno"));
         customerList.add(new Customer("André","Samuelsen","TheDragon"));
 
